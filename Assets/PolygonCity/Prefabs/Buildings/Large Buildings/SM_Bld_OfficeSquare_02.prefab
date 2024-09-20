@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3938339400981555854}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SM_Bld_OfficeSquare_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,6 +43,10 @@ PrefabInstance:
     - target: {fileID: 121088, guid: 5bad3bfa14ca03549852bc34961b1515, type: 3}
       propertyPath: m_Name
       value: SM_Bld_OfficeSquare_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 121088, guid: 5bad3bfa14ca03549852bc34961b1515, type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 481636, guid: 5bad3bfa14ca03549852bc34961b1515, type: 3}
       propertyPath: m_LocalPosition.x

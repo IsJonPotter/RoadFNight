@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2308990}
   - component: {fileID: 64055849554067994}
   - component: {fileID: 64585447730988126}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SM_Bld_OfficeOld_Large_Roof_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

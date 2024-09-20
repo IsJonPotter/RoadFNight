@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368745817262281831}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: SM_Bld_Shop_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
