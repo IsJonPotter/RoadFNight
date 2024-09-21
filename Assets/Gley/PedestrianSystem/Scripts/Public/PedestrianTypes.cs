@@ -5,6 +5,7 @@ namespace Gley.PedestrianSystem
 	public enum PedestrianTypes
 	{
 		Normal,
+		Worker,
 	}
 }
 #endif

@@ -1,5 +1,133 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &16698666970918906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2213813180952560280}
+  - component: {fileID: 268636401742112016}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_15
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2213813180952560280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16698666970918906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.479456, y: 0, z: 18.102596}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268636401742112016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16698666970918906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8776619705642026074}
+  prev:
+  - {fileID: 5064052494864543089}
+  draw: 1
+  inView: 0
+  position: {x: -9.020544, y: 0, z: -14.397404}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.99972767, y: 0, z: -0.023336641}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &371230219012442196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455215963527618110}
+  - component: {fileID: 8776619705642026074}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_17
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455215963527618110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371230219012442196}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.696993, y: 0, z: 23.173252}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8776619705642026074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371230219012442196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 148471606592773579}
+  prev:
+  - {fileID: 268636401742112016}
+  draw: 1
+  inView: 0
+  position: {x: -8.803007, y: 0, z: -9.326748}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.7485709, y: -0, z: 0.6630547}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1 &442599096566226237
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,6 +186,51 @@ MonoBehaviour:
   - {fileID: 5579174891897639267}
   - {fileID: 7861874647530234010}
   - {fileID: 2794927718725387008}
+--- !u!1 &550938927701363014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8825492334888649092}
+  m_Layer: 0
+  m_Name: Lane_0
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8825492334888649092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550938927701363014}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6805167097549984128}
+  - {fileID: 151701497159070377}
+  - {fileID: 1120565478274799668}
+  - {fileID: 7063302531891363165}
+  - {fileID: 7829066206047804043}
+  - {fileID: 6496254513124999300}
+  - {fileID: 2213813180952560280}
+  - {fileID: 455215963527618110}
+  - {fileID: 5068615971326281115}
+  - {fileID: 312441897924632260}
+  - {fileID: 7545131580782708215}
+  - {fileID: 5437727413594996607}
+  - {fileID: 1081750842396196531}
+  - {fileID: 771915753424538468}
+  m_Father: {fileID: 6982719462673582143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654458994647277378
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +380,81 @@ Transform:
   - {fileID: 4561928018821631738}
   m_Father: {fileID: 1860931463788548342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981641940568784285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7971288064236053422}
+  - component: {fileID: 5260701583550373471}
+  m_Layer: 0
+  m_Name: Path_1
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7971288064236053422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981641940568784285}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 12.5, y: 0, z: 12.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6982719462673582143}
+  m_Father: {fileID: 6247115321285388971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5260701583550373471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981641940568784285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee965ee8eaf2d543918963082c9c073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path:
+    points:
+    - {x: -32.449768, y: 0.050000012, z: -31.91441}
+    - {x: -32.652554, y: 0.050000012, z: -32.155415}
+    - {x: -9.263519, y: 0.050000012, z: -32.674355}
+    - {x: -9.187361, y: 0.050000012, z: -32.275227}
+    - {x: -9.131021, y: 0.050000012, z: -31.979961}
+    - {x: -9.71155, y: 0.050000012, z: -10.152708}
+    - {x: -9.147184, y: 0.050000012, z: -8.874088}
+    - {x: -8.843088, y: 0.050000012, z: -8.185135}
+    - {x: -32.42393, y: 0.050000012, z: -7.918647}
+    - {x: -32.123646, y: 0.050000012, z: -8.168337}
+    - {x: -31.826332, y: 0.050000012, z: -8.415555}
+    - {x: -32.088104, y: 0.050000012, z: -31.484589}
+    isClosed: 1
+    autoSetControlPoints: 0
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: -0, y: 0, z: 0}
+  laneWidth: 4
+  waypointDistance: 4
+  nrOfLanes: 1
+  selectedSegmentIndex: 2
+  draw: 1
+  isInsidePrefab: 1
+  inView: 1
+  startPosition: {x: 15.447294, y: 0.050000012, z: 48.975628}
+  endPosition: {x: 15.808959, y: 0.050000012, z: 49.40545}
+  skip: 0
+  justCreated: 0
+  _allowedPedestrians: 0101
 --- !u!1 &1024323078357037406
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +773,7 @@ Transform:
   - {fileID: 1699344933719149700}
   - {fileID: 6091906314993977092}
   - {fileID: 4740354451520019941}
+  - {fileID: 7971288064236053422}
   m_Father: {fileID: 1457139176047060166}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &5579174891897639267
@@ -547,6 +796,455 @@ MonoBehaviour:
   white_people_lst: []
   asian_people_lst: []
   halfcast_people_lst: []
+  path: {fileID: 5260701583550373471}
+--- !u!1 &2346269753545517994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1120565478274799668}
+  - component: {fileID: 5516387306592901255}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_5
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1120565478274799668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346269753545517994}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.80057, y: 0, z: 0.1846695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5516387306592901255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346269753545517994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5029306069988295583}
+  prev:
+  - {fileID: 5086187210472775085}
+  draw: 1
+  inView: 0
+  position: {x: -18.69943, y: 0, z: -32.31533}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.031759962, y: 0, z: -0.99949557}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &2681716122743252468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7829066206047804043}
+  - component: {fileID: 7575838872786985605}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_11
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7829066206047804043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681716122743252468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.400854, y: 0, z: 3.8625984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7575838872786985605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681716122743252468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5064052494864543089}
+  prev:
+  - {fileID: 5029306069988295583}
+  draw: 1
+  inView: 0
+  position: {x: -9.099146, y: 0, z: -28.637402}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.96520865, y: 0, z: -0.2614808}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &2835974389481724500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151701497159070377}
+  - component: {fileID: 5086187210472775085}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_3
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151701497159070377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835974389481724500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.098383, y: 0, z: -0.006504059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5086187210472775085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835974389481724500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5516387306592901255}
+  prev:
+  - {fileID: 3682144246754239651}
+  draw: 1
+  inView: 0
+  position: {x: -26.401617, y: 0, z: -32.506504}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.013380369, y: 0, z: -0.9999105}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &2853061195985871024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6496254513124999300}
+  - component: {fileID: 5064052494864543089}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_13
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6496254513124999300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853061195985871024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.404905, y: 0, z: 10.660397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5064052494864543089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853061195985871024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 268636401742112016}
+  prev:
+  - {fileID: 7575838872786985605}
+  draw: 1
+  inView: 0
+  position: {x: -9.095095, y: 0, z: -21.839603}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.9999848, y: 0, z: -0.0055197086}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &2856862146284499288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5068615971326281115}
+  - component: {fileID: 148471606592773579}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_21
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5068615971326281115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856862146284499288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.019632, y: 0, z: 24.26659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148471606592773579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856862146284499288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8258717496691939053}
+  prev:
+  - {fileID: 8776619705642026074}
+  draw: 1
+  inView: 0
+  position: {x: -14.480368, y: 0, z: -8.23341}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.08580837, y: -0, z: 0.99631166}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &3693890440393032117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 771915753424538468}
+  - component: {fileID: 2207086343553336349}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_34
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &771915753424538468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3693890440393032117}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.13566971, y: 0, z: 5.929058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2207086343553336349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3693890440393032117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 3682144246754239651}
+  prev:
+  - {fileID: 2490287049628914106}
+  draw: 1
+  inView: 0
+  position: {x: -32.36433, y: 0, z: -26.570942}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.9999966, y: 0, z: 0.0026106087}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &3733256914548174883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081750842396196531}
+  - component: {fileID: 2490287049628914106}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_32
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081750842396196531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733256914548174883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.035149574, y: 0, z: 13.465542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2490287049628914106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733256914548174883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2207086343553336349}
+  prev:
+  - {fileID: 5103700404953502743}
+  draw: 1
+  inView: 0
+  position: {x: -32.46485, y: 0, z: -19.034458}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.99979717, y: 0, z: -0.020141494}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1 &3760186081084604430
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +1278,70 @@ Transform:
   - {fileID: 3861488712717409875}
   m_Father: {fileID: 8281952413109559494}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3918192140309710795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7545131580782708215}
+  - component: {fileID: 6900220312558323964}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_25
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7545131580782708215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3918192140309710795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3668213, y: 0, z: 24.145908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6900220312558323964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3918192140309710795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5103700404953502743}
+  prev:
+  - {fileID: 8258717496691939053}
+  draw: 1
+  inView: 0
+  position: {x: -29.133179, y: 0, z: -8.354092}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.3482401, y: 0, z: 0.93740535}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1 &3982385510319292160
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +1470,135 @@ MonoBehaviour:
   white_people_lst: []
   asian_people_lst: []
   halfcast_people_lst: []
+  path: {fileID: 0}
+--- !u!1 &5089288022377211823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312441897924632260}
+  - component: {fileID: 8258717496691939053}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_23
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312441897924632260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089288022377211823}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.456331, y: 0, z: 24.313618}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8258717496691939053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089288022377211823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 6900220312558323964}
+  prev:
+  - {fileID: 148471606592773579}
+  draw: 1
+  inView: 0
+  position: {x: -22.043669, y: 0, z: -8.186382}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.008235804, y: 0, z: 0.9999661}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
+--- !u!1 &5318896357597478219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6805167097549984128}
+  - component: {fileID: 3682144246754239651}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_0
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6805167097549984128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318896357597478219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0000038146973, y: 0, z: -0.0000038146973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3682144246754239651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318896357597478219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5086187210472775085}
+  prev:
+  - {fileID: 2207086343553336349}
+  draw: 1
+  inView: 0
+  position: {x: -32.500004, y: 0, z: -32.500004}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.70549136, y: 0, z: -0.70871854}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1 &5405261989748819423
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +1705,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6301766378886054641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6982719462673582143}
+  m_Layer: 0
+  m_Name: Lanes
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6982719462673582143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301766378886054641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8825492334888649092}
+  m_Father: {fileID: 7971288064236053422}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6385685976489957056
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +1778,70 @@ Transform:
   - {fileID: 7003042997384550517}
   m_Father: {fileID: 1860931463788548342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6627491743172285651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7063302531891363165}
+  - component: {fileID: 5029306069988295583}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_7
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7063302531891363165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627491743172285651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.64036, y: 0, z: 0.45558167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5029306069988295583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627491743172285651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 7575838872786985605}
+  prev:
+  - {fileID: 5516387306592901255}
+  draw: 1
+  inView: 0
+  position: {x: -11.85964, y: 0, z: -32.04442}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: 0.3577511, y: 0, z: -0.93381697}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1 &7392356289288361235
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1971,7 @@ MonoBehaviour:
   white_people_lst: []
   asian_people_lst: []
   halfcast_people_lst: []
+  path: {fileID: 0}
 --- !u!1 &8829405053101811703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +2025,70 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8971243921005964682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5437727413594996607}
+  - component: {fileID: 5103700404953502743}
+  m_Layer: 0
+  m_Name: Path_1-Lane_0-Waypoint_30
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5437727413594996607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971243921005964682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15528107, y: 0, z: 20.371471}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8825492334888649092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5103700404953502743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971243921005964682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771698a9b3016744bf1bd7e6cb0127a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2490287049628914106}
+  prev:
+  - {fileID: 6900220312558323964}
+  draw: 1
+  inView: 0
+  position: {x: -32.65528, y: 0, z: -12.128529}
+  priorityLocked: 0
+  priority: 1
+  triggerEvent: 0
+  eventData: 
+  distance: 
+  penaltyLocked: 0
+  penalty: 0
+  _allowedPedestrians: 
+  _left: {x: -0.9546311, y: 0, z: 0.29779106}
+  _laneWidth: 4
+  _pedestrianLocked: 0
+  _inIntersection: 0
+  _crossing: 0
 --- !u!1001 &3399963459833667
 PrefabInstance:
   m_ObjectHideFlags: 0

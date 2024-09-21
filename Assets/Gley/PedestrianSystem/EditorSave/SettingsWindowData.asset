@@ -15,7 +15,7 @@ MonoBehaviour:
   EditorColors:
     LabelColor: {r: 1, g: 1, b: 1, a: 1}
     RoadColor: {r: 0, g: 1, b: 0, a: 1}
-    LaneColor: {r: 0, g: 0, b: 1, a: 1}
+    LaneColor: {r: 1, g: 0, b: 0.014465809, a: 1}
     LaneChangeColor: {r: 1, g: 0, b: 1, a: 1}
     ConnectorLaneColor: {r: 0, g: 1, b: 1, a: 1}
     AnchorPointColor: {r: 1, g: 1, b: 1, a: 1}
@@ -49,12 +49,12 @@ MonoBehaviour:
   ShowConnections: 0
   ShowPriority: 0
   ShowVehicles: 0
-  ViewOtherRoads: 0
-  ViewRoadLanes: 0
-  ViewRoadWaypoints: 0
-  ViewLabels: 0
+  ViewOtherRoads: 1
+  ViewRoadLanes: 1
+  ViewRoadWaypoints: 1
+  ViewLabels: 1
   PathFindingEnabled: 0
   WaypointDistance: 4
   LaneWidth: 4
   MoveTool: 1
-  GlobalPedestrianList: 
+  GlobalPedestrianList: 0000000001000000
