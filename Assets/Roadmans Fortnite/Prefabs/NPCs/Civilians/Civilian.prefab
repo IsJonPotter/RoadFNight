@@ -1880,6 +1880,7 @@ MonoBehaviour:
     type: 3}
   BulletSpeed: 10
   MuzzleFlashEffectPosition: {fileID: 2356402882789894002}
+  particleSystem: {fileID: 0}
   WeaponIdleTriggerName: M4Idle
   WeaponAimTriggerName: M4Aim
   WeaponShootAnimationName: M4Shoot
@@ -2257,9 +2258,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0
+  weaponWheelManager: {fileID: 0}
+  shopManager: {fileID: 0}
   _emoteWheel: {fileID: 0}
   _chatSystem: {fileID: 0}
-  player: {fileID: 6620923452658758675}
+  netPlayer: {fileID: 0}
   playerNutrition: {fileID: 5630967227957478435}
   audioSource: {fileID: -8999880934896529054}
   TPControllerManager: {fileID: 5479138105933174491}
@@ -2276,6 +2279,11 @@ MonoBehaviour:
   usesParachute: 0
   isAiming: 0
   chatWindow: {fileID: 0}
+  _slot:
+    item:
+      hash: 0
+      currentShelfLifeInSeconds: 0
+    amount: 0
   _gFX: {fileID: 2610227527127011296}
 --- !u!114 &-7177926160971466215
 MonoBehaviour:
@@ -2291,6 +2299,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  _slot:
+    item:
+      hash: 0
+      currentShelfLifeInSeconds: 0
+    amount: 0
 --- !u!114 &5630967227957478435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2322,6 +2335,9 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   playerInventory: {fileID: -1612451488991402610}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
   _maxDistance: 7
   UIMessagePrefab: {fileID: 3988554910629475873, guid: 4f141ce72a5ab8848bd38ab073332ffa,
     type: 3}
@@ -24922,6 +24938,7 @@ MonoBehaviour:
     type: 3}
   BulletSpeed: 5
   MuzzleFlashEffectPosition: {fileID: 327692566371041962}
+  particleSystem: {fileID: 0}
   WeaponIdleTriggerName: M4Idle
   WeaponAimTriggerName: M4Aim
   WeaponShootAnimationName: M4Shoot
@@ -25393,6 +25410,7 @@ MonoBehaviour:
     type: 3}
   BulletSpeed: 10
   MuzzleFlashEffectPosition: {fileID: 6691649397073769879}
+  particleSystem: {fileID: 0}
   WeaponIdleTriggerName: PistolIdle
   WeaponAimTriggerName: PistolAim
   WeaponShootAnimationName: PistolShoot

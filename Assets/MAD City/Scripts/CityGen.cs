@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using static DistrictData;
+using Redcode.Pools;
 
 [ExecuteInEditMode]
 public class CityGen : MonoBehaviour
@@ -87,6 +88,7 @@ public class CityGen : MonoBehaviour
 
     public int ovrn = 0;
     private int randFlip = 0;
+
     void OnEnable()
     {
         if (generateOnEnable)
@@ -150,11 +152,6 @@ public class CityGen : MonoBehaviour
         RiverPositionRandom = true;
     }
 
-    public void Generate()
-    {
-        SpawnBlocks();
-    }
-
     /* public void AddOcean()
      {
          for (int x = 0; x < gridX; x++)
@@ -168,6 +165,11 @@ public class CityGen : MonoBehaviour
              }
          }
      }*/
+
+    public void Generate()
+    {
+        SpawnBlocks();
+    }
 
     //Spawn City Blocks and perimeter
     public void SpawnBlocks()
@@ -863,7 +865,6 @@ public class CityGen : MonoBehaviour
     public void GenerateBuildings()
     {
         Build();
-
     }
 
     //Spawn Buildings (with Noise)
@@ -878,7 +879,7 @@ public class CityGen : MonoBehaviour
         int buildingnumber = 0;
         int thisRegion = 0;
 
-
+        #region small_buildings
         foreach (_building mybuilding in listOfBuildings)
         {
             buildingnumber++;
@@ -921,7 +922,9 @@ public class CityGen : MonoBehaviour
             }
 
         }
+        #endregion
 
+        #region large_bulidings
         foreach (_buildingLarge mybuilding in listOfLargeBuildings)
         {
             buildingnumber++;
@@ -961,7 +964,9 @@ public class CityGen : MonoBehaviour
                 SpawnPieceLayer(_regions[thisRegion].LargeBuildings[randomBuilding].topParts, heightOffset, mybuilding.transform, Building.transform, rotation, RandomColor, randFlip);
             }
         }
+        #endregion
 
+        #region POI
         foreach (_poi mybuilding in listOfPOIs)
         {
             buildingnumber++;
@@ -996,6 +1001,7 @@ public class CityGen : MonoBehaviour
 
             //SpawnPieceLayer(_regions[thisRegion].PointsOfInterest[randomBuilding].topParts, heightOffset, mybuilding.transform, Building.transform, rotation, RandomColor, randFlip);
         }
+        #endregion
     }
 
     float SpawnPieceLayer(GameObject[] pieceArray, float inputHeight, Transform buildingPos, Transform Parent, Quaternion rotation, Color color, int buildingScale)

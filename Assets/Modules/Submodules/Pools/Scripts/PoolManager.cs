@@ -64,7 +64,6 @@ namespace Redcode.Pools
             {
                 var poolType = genericPoolType.MakeGenericType(poolData.Component.GetType());
                 var createMethod = poolType.GetMethod("Create", BindingFlags.Static | BindingFlags.NonPublic);
-
                 var pool = createMethod.Invoke(null, new object[] { poolData.Component, poolData.Count, poolData.Container });
 
                 if (poolData.NonLazy)
