@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class _block : MonoBehaviour
@@ -11,6 +12,18 @@ public class _block : MonoBehaviour
     public enum Regions {Region0, Region1, Region2,Region3,Region4,Region5,Region6,Region7}
     public Regions _Region = 0;
     public List<District> _districts = new List<District>();
+
+    public PedestrianSystem pedestrianSystem;
+    public List<Pedestrian> pedestrian_lst;
+
+    public void try_add_pedestrian(Pedestrian pedestrian)
+    {
+        if (math.abs(pedestrian.transform.position.x - transform.position.x) < 40 &&
+            math.abs(pedestrian.transform.position.z - transform.position.z) < 40)
+        {
+            pedestrian_lst.Add(pedestrian);
+        }
+    }
 
     private void OnDrawGizmos()
     {

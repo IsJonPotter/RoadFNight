@@ -12,6 +12,10 @@ public class PedestrianSystem : MonoBehaviour
     public List<GameObject> player_lst = new List<GameObject>();
     public float visible_threshold = 10;
 
+    private void Awake()
+    {
+        init_block_pedestrian();//init secondary brain
+    }
 
     void Update()
     {
@@ -24,6 +28,18 @@ public class PedestrianSystem : MonoBehaviour
                 pedestrian.visible_dict[player] = update_visible_state(distance_dict[player]);
             }
         }
+    }
+    
+    private void init_block_pedestrian()
+    {
+        foreach (var block in myCity.listOfBlocks)
+        {
+            foreach (var pedestrian in GetComponentsInChildren<Pedestrian>(true))
+            {
+                block.try_add_pedestrian(pedestrian);
+            }
+        }
+        
     }
 
     //Calculate the distance between pedestrian and players
